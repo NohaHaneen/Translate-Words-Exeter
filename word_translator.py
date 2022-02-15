@@ -56,6 +56,8 @@ def translator(fileName):
         contents[num1] = " ".join(wordList)
         num1 = num1 + 1
 
+        print(contents[num1-1])
+
     with open("t8.shakespeare.translated.txt", 'a') as outputFile:
         contents = "".join(contents)
         outputFile.write(contents)
